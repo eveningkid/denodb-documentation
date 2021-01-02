@@ -1,0 +1,44 @@
+{
+  "docs": {
+    "Guides": [
+      "getting-started",
+      "guides/connect-database",
+      {
+        "type": "subcategory",
+        "label": "Clients",
+        "ids": [
+          "guides/using-sqlite",
+          "guides/using-postgresql",
+          "guides/using-mysql",
+          "guides/using-mongodb"
+        ]
+      },
+      "guides/create-models",
+      "guides/synchronize-database",
+      "guides/query-models",
+      {
+        "type": "subcategory",
+        "label": "Relationships",
+        "ids": [
+          "guides/foreign-key",
+          "guides/one-to-one",
+          "guides/one-to-many",
+          "guides/many-to-many"
+        ]
+      },
+      "guides/model-events"
+    ],
+    "API Reference": [
+      {
+        "type": "subcategory",
+        "label": "Models",
+        "ids": [
+          "api/data-types",
+          "api/field-descriptors",
+          "api/model-methods",
+          "api/model-records"
+        ]
+      }
+    ]
+  }
+}
