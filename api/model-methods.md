@@ -115,8 +115,8 @@ Join a table with left statement to the current query. You might need to use `fi
 
 ```typescript
 await Flight.where(Flight.field('departure'), 'Paris')
-	.leftJoin(Airport, Airport.field('id'), Flight.field('airportId'))
-	.get();
+  .leftJoin(Airport, Airport.field('id'), Flight.field('airportId'))
+  .get();
 ```
 
 ## leftOuterJoin
