@@ -24,5 +24,5 @@ Depending on the dialect, you might need different options:
 
 - [Using SQLite](guides/using-sqlite.md)
 - [Using PostegreSQL](guides/using-postgresql.md)
-- [Using MySQL](guides/using-mysql.md)
+- [Using MySQL (MariaDB)](guides/using-mysql.md)
 - [Using MongoDB](guides/using-mongodb.md)

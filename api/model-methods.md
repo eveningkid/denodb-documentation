@@ -109,6 +109,26 @@ await Flight.where(Flight.field('departure'), 'Paris')
   .get();
 ```
 
+### leftJoin
+
+Join a table with left statement to the current query. You might need to use `field` in case field names are overlapping (which might happen with `id`s).
+
+```typescript
+await Flight.where(Flight.field('departure'), 'Paris')
+	.leftJoin(Airport, Airport.field('id'), Flight.field('airportId'))
+	.get();
+```
+
+### leftOuterJoin
+
+Join a table with left outer statement to the current query. You might need to use `field` in case field names are overlapping (which might happen with `id`s).
+
+```typescript
+await Flight.where(Flight.field('departure'), 'Paris')
+	.leftOuterJoin(Airport, Airport.field('id'), Flight.field('airportId'))
+	.get();
+```
+
 ## limit
 
 Limit the number of results returned from the query.

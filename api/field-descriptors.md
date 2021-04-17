@@ -58,6 +58,16 @@ static fields = {
 };
 ```
 
+### Integer
+
+Set a maximum number of digits for this field.
+
+```javascript
+static fields = {
+	quantity: DataTypes.integer(2)
+}
+```
+
 ## Descriptors
 
 Here is a list of all the field descriptors available:
