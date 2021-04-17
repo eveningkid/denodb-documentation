@@ -64,7 +64,7 @@ Set a maximum number of digits for this field.
 
 ```javascript
 static fields = {
-	quantity: DataTypes.integer(2)
+  quantity: DataTypes.integer(2)
 }
 ```
 
