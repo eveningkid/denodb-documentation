@@ -22,7 +22,8 @@ const db = new Database(
 
 Depending on the dialect, you might need different options:
 
-- [Using SQLite](guides/using-sqlite.md)
-- [Using PostegreSQL](guides/using-postgresql.md)
-- [Using MySQL](guides/using-mysql.md)
+- [Using MariaDB](guides/using-mariadb.md)
 - [Using MongoDB](guides/using-mongodb.md)
+- [Using MySQL](guides/using-mysql.md)
+- [Using PostegreSQL](guides/using-postgresql.md)
+- [Using SQLite](guides/using-sqlite.md)

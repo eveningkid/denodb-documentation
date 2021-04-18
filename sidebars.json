@@ -7,10 +7,11 @@
         "type": "subcategory",
         "label": "Clients",
         "ids": [
-          "guides/using-sqlite",
-          "guides/using-postgresql",
+          "guides/using-mariadb",
+          "guides/using-mongodb",
           "guides/using-mysql",
-          "guides/using-mongodb"
+          "guides/using-postgresql",
+          "guides/using-sqlite"
         ]
       },
       "guides/create-models",
