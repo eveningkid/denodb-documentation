@@ -54,19 +54,18 @@ class Business extends Model {
 
 ## Model belongs to...
 
-To explicitely indicate that `Business` belongs to `Owner`, we need to add an additional field. We will call it `ownerId`, following the naming convention:
+To explicitely indicate that `Business` belongs to `Owner`, we need to add a `ownerId` field to `Business`.
+
+A simple way of doing this, following the correct naming convention is through the `Relationships.belongsTo` helper:
 
 ```javascript
 import { Relationships } from 'https://deno.land/x/denodb/mod.ts';
 
-class Business extends Model {
-  // ...
+// After both models declarations
 
-  static fields = {
-    // ...
-    ownerId: Relationships.belongsTo(Owner),
-  };
-}
+Relationships.belongsTo(Business, Owner);
+
+// Before database linking
 ```
 
 This will make `ownerId` a foreign key based on `Owner.id` primary key.
@@ -147,13 +146,14 @@ class Business extends Model {
       primaryKey: true,
     },
     name: DataTypes.STRING,
-    ownerId: Relationships.belongsTo(Owner),
   };
 
   static owner() {
     return this.hasOne(Owner);
   }
 }
+
+Relationships.belongsTo(Business, Owner);
 
 db.link([Owner, Business]);
 

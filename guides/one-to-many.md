@@ -86,16 +86,11 @@ You can easily add this foreign key to `Business` using `Relationships.belongsTo
 ```typescript
 import { Relationships } from 'https://deno.land/x/denodb/mod.ts';
 
-class Business extends Model {
-  // ...
+// After both models declarations
 
-  static fields = {
-    // ...
-    ownerId: Relationships.belongsTo(Owner),
-  };
+Relationships.belongsTo(Business, Owner);
 
-  // ...
-}
+// Before database linking
 ```
 
 `ownerId` will be set as a foreign key on `Owner.id`.
@@ -175,13 +170,14 @@ class Business extends Model {
       primaryKey: true,
     },
     name: DataTypes.STRING,
-    ownerId: Relationships.belongsTo(Owner),
   };
 
   static owner() {
     return this.hasOne(Owner);
   }
 }
+
+Relationships.belongsTo(Business, Owner);
 
 db.link([Owner, Business]);
 
