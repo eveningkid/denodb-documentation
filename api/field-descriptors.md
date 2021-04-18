@@ -84,3 +84,4 @@ Here is a list of all the field descriptors available:
 | Precision (for decimals) | `precision`      | `precision: 3`                   |
 | Scale (for decimals)     | `scale`          | `scale: 2`                       |
 | Values (for enums)       | `values`         | `values: ["active", "canceled"]` |
+| Comment                  | `comment`        | `comment: "User name"`           |
