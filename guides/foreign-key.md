@@ -155,7 +155,7 @@ class Business extends Model {
   }
 }
 
-db.link([Business, Owner]);
+db.link([Owner, Business]);
 
 await db.sync({ drop: true });
 
