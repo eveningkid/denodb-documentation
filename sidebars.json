@@ -17,6 +17,7 @@
       "guides/create-models",
       "guides/synchronize-database",
       "guides/query-models",
+      "guides/transactions",
       {
         "type": "subcategory",
         "label": "Relationships",
