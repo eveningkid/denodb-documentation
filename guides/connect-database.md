@@ -14,10 +14,10 @@ const connector = new YourDatabaseConnector({ ... });
 const db = new Database(connector);
 
 // If you need debug logs, set `debug` to `true`
-const db = new Database(
+const db = new Database({
   connector,
   debug: true,
-);
+});
 ```
 
 Depending on the dialect, you might need different options:
